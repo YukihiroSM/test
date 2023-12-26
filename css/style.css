@@ -1,0 +1,175 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%; /* Використовуємо відсотки для плавної адаптації */
+    margin-bottom: 5vw; /* Використовуємо vw для адаптації до ширини екрану */
+    position: relative;
+}
+
+.name {
+    margin: 5vw 0 0;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw; /* Замінюємо фіксоване значення на відносне */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5vw; /* Замінюємо фіксоване значення на відносне */
+    text-transform: uppercase;
+}
+
+.divider {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    width: 85%; /* Використовуємо відсотки для адаптації */
+}
+
+.title {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.70);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw; /* Замінюємо фіксоване значення на відносне */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-transform: capitalize;
+}
+
+.row {
+    display: flex;
+    align-items: flex-start; /* Змінюємо вирівнювання */
+}
+
+.left-column {
+    width: 100%;
+    max-width: 30%;
+    margin-right: 5%; /* Змінюємо margin-right для відступу від правої колонки */
+    margin-left: 5%
+}
+
+.right-column {
+    width: 100%;
+    max-width: 65%;
+}
+
+.vertical-line {
+    position: absolute;
+    height: 80%; /* Змінюємо висоту на 100% для розділення колонок від верху до низу */
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    top: 0;
+    left: 30%; /* Змінюємо left, щоб відокремити ліву колонку */
+    margin-top: 15vw;
+}
+
+@media screen and (max-width: 767px) {
+    .right-column {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.column-section {
+    margin: 2vw 0 2vw 5%; /* Використовуємо відсотки для адаптації */
+}
+
+.column-section h3 {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8vw; /* Замінюємо фіксоване значення на відносне */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+.column-title {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3vw; /* Замінюємо фіксоване значення на відносне */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+}
+
+.column-content {
+    color: rgba(0, 0, 0, 0.70);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw; /* Замінюємо фіксоване значення на відносне */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.09px;
+}
+
+.progress-bar {
+    margin: 0.5vw 0 1vw;
+}
+
+.job-title {
+    color: #000;
+}
+
+.column-section ul {
+    margin: 0 0 0 2%; /* Використовуємо відсотки для адаптації */
+    padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .divider {
+        display: none;
+    }
+
+    .right-column,
+    .left-column {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .heading {
+        padding-left: 2%;
+        margin-bottom: 2vw;
+    }
+}
+
+/* Floating Print Button for Desktop */
+.print-button {
+    display: none;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    background-color: #007bff;
+    color: #fff;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for Print Button */
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+    .print-button {
+        display: block;
+    }
+}
