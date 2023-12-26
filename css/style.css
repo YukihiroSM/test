@@ -133,22 +133,6 @@ body {
     padding: 0;
 }
 
-@media screen and (max-width: 767px) {
-    .divider {
-        display: none;
-    }
-
-    .right-column,
-    .left-column {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .heading {
-        padding-left: 2%;
-        margin-bottom: 2vw;
-    }
-}
 
 /* Floating Print Button for Desktop */
 .print-button {
@@ -168,8 +152,31 @@ body {
     background-color: #0056b3;
 }
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (max-width: 767px) {
+    .divider {
+        display: none;
+    }
+
+    .right-column,
+    .left-column {
+        width: 100%;
+        max-width: 100%;
+        margin: 0; /* Remove the margin for mobile */
+    }
+
+    .heading {
+        padding-left: 2%;
+        margin-bottom: 2vw;
+    }
+
+    .vertical-line {
+        display: none; /* Hide the vertical line on mobile */
+    }
+
+    /* Hide the print button on mobile */
     .print-button {
-        display: block;
+        display: none;
     }
 }
