@@ -133,27 +133,6 @@ body {
     padding: 0;
 }
 
-
-/* Floating Print Button for Desktop */
-.print-button {
-    display: none;
-    position: fixed;
-    bottom: 2vw;
-    right: 2vw;
-    background-color: #007bff;
-    color: #fff;
-    padding: 1vw 2vw;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Hover effect for Print Button */
-.print-button:hover {
-    background-color: #0056b3;
-}
-
-
-
 @media screen and (max-width: 767px) {
     .divider {
         display: none;
@@ -178,5 +157,28 @@ body {
     /* Hide the print button on mobile */
     .print-button {
         display: none;
+    }
+}
+
+.print-button {
+    display: none;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    background-color: #007bff;
+    color: #fff;
+    padding: 1vw 2vw;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for Print Button */
+.print-button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+    .print-button {
+        display: block;
     }
 }
